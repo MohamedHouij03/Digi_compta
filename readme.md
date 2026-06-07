@@ -22,7 +22,6 @@
 <!-- PLACEHOLDER: Demo Video — Replace the URL below with your actual demo video link -->
 [![Watch Demo](https://img.shields.io/badge/▶_Watch_Demo-Coming_Soon-FF6B6B?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/PLACEHOLDER_DEMO_VIDEO)
 
-> 📌 *Remplacez le lien ci-dessus par l'URL de votre vidéo de démonstration.*
 
 ---
 
@@ -147,7 +146,8 @@ L'avantage de n8n est sa **flexibilité** : les workflows sont visuels et modifi
 
 > 📸 *Placeholder : Capture d'écran du workflow n8n pour le pipeline OCR*
 
-![n8n Workflow](https://placehold.co/800x450/1a1a2e/EA5B4B?text=🔄+n8n+OCR+Workflow)
+<img width="1541" height="447" alt="Capture d&#39;écran 2025-08-28 100507" src="https://github.com/user-attachments/assets/8b7e1d97-9d97-48b8-b5f4-db85fdd8813a" />
+
 
 ### Comment les trois travaillent ensemble
 
