@@ -2,17 +2,17 @@
 
 # 🧾 Digi Compta
 
-**Plateforme de Comptabilité Numérique pour Cabinets Comptables Tunisiens**
+**OCR Intelligent & Automatisation pour Cabinets Comptables Tunisiens**
 
-*Automatisez votre flux documentaire — de la collecte de factures à la génération de déclarations fiscales*
+*Transformez vos factures PDF en données structurées — automatiquement, en temps réel, avec l'IA*
 
-[![React](https://img.shields.io/badge/React-18.2-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.4-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.111-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Ant Design](https://img.shields.io/badge/Ant_Design-5.18-0170FE?style=for-the-badge&logo=antdesign&logoColor=white)](https://ant.design/)
-[![n8n](https://img.shields.io/badge/n8n-Workflow-EA5B4B?style=for-the-badge&logo=n8n&logoColor=white)](https://n8n.io/)
+[![n8n](https://img.shields.io/badge/n8n-Workflow_Automation-EA5B4B?style=for-the-badge&logo=n8n&logoColor=white)](https://n8n.io/)
+[![Groq](https://img.shields.io/badge/Groq-Ultra_Fast_Inference-F55036?style=for-the-badge&logo=groq&logoColor=white)](https://groq.com/)
+[![Mistral AI](https://img.shields.io/badge/Mistral_AI-OCR_Extraction-FF7000?style=for-the-badge&logo=mistralai&logoColor=white)](https://mistral.ai/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-REST_API-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![WebSocket](https://img.shields.io/badge/WebSocket-Realtime-010101?style=for-the-badge&logo=websocket&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org/)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](./LICENSE)
 
 ---
@@ -20,7 +20,7 @@
 ### 🎬 Démo Vidéo
 
 <!-- PLACEHOLDER: Demo Video — Replace the URL below with your actual demo video link -->
-[![Demo Video Placeholder](https://img.shields.io/badge/▶_Watch_Demo-Coming_Soon-FF6B6B?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/PLACEHOLDER_DEMO_VIDEO)
+[![Watch Demo](https://img.shields.io/badge/▶_Watch_Demo-Coming_Soon-FF6B6B?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/PLACEHOLDER_DEMO_VIDEO)
 
 > 📌 *Remplacez le lien ci-dessus par l'URL de votre vidéo de démonstration.*
 
@@ -30,227 +30,306 @@
 
 ## 📖 Table des Matières
 
-- [📍 À Propos](#-à-propos)
-- [✨ Fonctionnalités](#-fonctionnalités)
-- [🏗️ Architecture](#️-architecture)
-- [🛠️ Stack Technique](#️-stack-technique)
-- [📁 Structure du Projet](#-structure-du-projet)
-- [🚀 Installation & Lancement](#-installation--lancement)
-- [🔄 Flux de Données](#-flux-de-données)
-- [🌐 Plateformes Nationales](#-plateformes-nationales)
+- [🧠 Pourquoi Digi Compta ?](#-pourquoi-digi-compta-)
+- [🔍 Le Cœur du Projet : L'OCR Automatisé](#-le-cœur-du-projet--locr-automatisé)
+- [🤖 L'Écosystème IA : Groq + Mistral + n8n](#-lécosystème-ia--groq--mistral--n8n)
+- [🔄 Pipeline Complet de Traitement](#-pipeline-complet-de-traitement)
+- [⚡ Temps Réel & WebSocket](#-temps-réel--websocket)
+- [📋 Des Factures aux Déclarations Fiscales](#-des-factures-aux-déclarations-fiscales)
+- [🏛️ Plateformes Nationales Tunisiennes](#️-plateformes-nationales-tunisiennes)
 - [📸 Captures d'Écran](#-captures-décran)
+- [🛠️ Stack Technique](#️-stack-technique)
+- [🚀 Installation & Lancement](#-installation--lancement)
 - [⚙️ Configuration](#️-configuration)
+- [📁 Structure du Projet](#-structure-du-projet)
 - [🤝 Contribution](#-contribution)
 - [📝 Licence](#-licence)
-- [👥 Auteurs](#-auteurs)
+- [👥 Auteur](#-auteur)
 
 ---
 
-## 📍 À Propos
+## 🧠 Pourquoi Digi Compta ?
 
-**Digi Compta** est une plateforme de comptabilité numérique conçue spécifiquement pour les **cabinets comptables tunisiens**. Elle automatise l'ensemble du pipeline documentaire — de la collecte de factures PDF à la génération de déclarations fiscales — en s'appuyant sur l'OCR intelligent via n8n et la diffusion en temps réel via WebSocket.
+Chaque jour, les cabinets comptables tunisiens perdent des heures à **saisir manuellement** les données de factures, à **vérifier** les montants, à **reformater** les informations pour les déclarations fiscales. C'est un travail répétitif, erreur-prone, et coûteux.
 
-### 🎯 Problème Résolu
+**Digi Compta élimine ce goulot d'étranglement.** En combinant l'OCR propulsé par **Mistral AI**, l'inférence ultra-rapide de **Groq**, et l'automatisation de **n8n**, le système transforme un PDF brut en données structurées exploitables — en quelques secondes, sans intervention humaine.
 
-Les cabinets comptables tunisiens font face à des défis majeurs dans leur quotidien :
-
-| Défi | Impact |
-|------|--------|
-| 📄 Saisie manuelle des factures | Perte de temps considérable, erreurs humaines |
-| 🔄 Processus fragmentés | Multiples outils non connectés entre eux |
-| 📋 Déclarations fiscales fastidieuses | Risque de retard et de pénalités |
-| 🏛️ Déclarations multi-plateformes | CNSS, JIBAYA, RNE — chaque portail est séparé |
-| 🗃️ Archivage peu fiable | Perte de documents, difficulté de recherche |
-
-**Digi Compta** adresse ces problématiques en unifiant l'ensemble du flux dans une seule interface intuitive et automatisée.
+| 😫 Avant Digi Compta | 🚀 Avec Digi Compta |
+|:----------------------|:---------------------|
+| Saisie manuelle de chaque facture | Upload PDF → données extraites automatiquement |
+| 5 à 10 minutes par facture | Quelques secondes par facture |
+| Erreurs de retranscription fréquentes | Extraction IA avec vérification intégrée |
+| Processus déconnecté entre outils | Pipeline automatisé de bout en bout |
+| Déclarations fiscales manuelles | Génération automatique depuis les factures |
+| Aucune visibilité en temps réel | Diffusion WebSocket en direct |
 
 ---
 
-## ✨ Fonctionnalités
+## 🔍 Le Cœur du Projet : L'OCR Automatisé
 
-### 📊 Tableau de Bord (Dashboard)
-- Statistiques clés en temps réel : documents mensuels, déclarations générées, taux d'automatisation
-- Indicateurs de tendance avec évolution mensuelle
-- KPIs visuels avec cartes de synthèse
+La pièce maîtresse de Digi Compta est son **pipeline OCR intelligent** — un système conçu pour comprendre et extraire les données de factures tunisiennes et francophones avec une précision élevée.
 
-### 📤 Collecte de Documents
-- Glisser-déposer de fichiers PDF via une interface intuitive
-- Stockage local dans IndexedDB pour accès hors-ligne
-- Déclenchement automatique du pipeline OCR via webhook n8n
-- Prévisualisation et suppression des documents
+### Comment ça fonctionne
 
-### 🔍 OCR Intelligent
-- Extraction automatique des données de factures via n8n
-- Suivi de l'état de traitement : *Terminé* / *En cours*
-- Normalisation robuste des données extraites (champs français/anglais, formats numériques tunisiens)
+1. **📤 Vous uploadez un PDF** — Glisser-déposer simple dans l'interface
+2. **🔔 n8n déclenche le workflow** — Le fichier est envoyé automatiquement via webhook
+3. **🤖 Mistral AI analyse le document** — Le modèle de vision/language de Mistral extrait les données structurées depuis l'image du document
+4. **⚡ Groq accélère l'inférence** — Les appels API passent par Groq pour une inference ultra-rapide (réponse en millisecondes)
+5. **🔄 Les données sont normalisées** — Le système gère les formats français (virgules décimales, espaces insécables, champs multilingues)
+6. **🧾 L'éditeur de facture se remplit** — Les données extraites apparaissent automatiquement, prêtes à vérifier et valider
+7. **📡 Le résultat est diffusé en temps réel** — Tous les utilisateurs connectés voient la facture apparaître instantanément
 
-### 🧾 Éditeur de Factures
-- Formulaire complet auto-rempli à partir des données OCR
-- Informations fournisseur (nom, TVA, adresse, téléphone, email)
-- Lignes de factures avec description, quantité, prix unitaire et total
-- Sauvegarde automatique vers le backend
+### Ce que l'OCR extrait
 
-### ⚡ Temps Réel (WebSocket)
-- Diffusion en direct des factures traitées
-- Visualisation instantanée des données entrantes
-- Mise à jour automatique sans rechargement de page
+Pour chaque facture, le système extrait automatiquement :
 
-### 📋 Déclarations Fiscales
-- Gestion des déclarations TVA et IR
-- Suivi par période avec indicateurs de statut
-- Génération automatique à partir des données de factures
+| Catégorie | Champs extraits |
+|:----------|:----------------|
+| 🏢 **Fournisseur** | Nom, numéro TVA, adresse, téléphone, email |
+| 🧾 **Facture** | Numéro de facture, date d'émission, devise (TND par défaut) |
+| 📦 **Lignes de facture** | Description, quantité, prix unitaire, montant total par ligne |
+| 💰 **Totaux** | Sous-total, taxe (TVA), montant total TTC |
 
-### 👥 Gestion des Clients
-- Tableau de bord des informations clients
-- Détails : raison sociale, NIF (Numéro d'Identification Fiscale), contacts
-- Actions d'édition en ligne
+### La Normalisation Intelligente
 
-### 🏛️ Plateformes Nationales
-- Intégration avec les plateformes gouvernementales tunisiennes :
-  - **CNSS** — Caisse Nationale de Sécurité Sociale
-  - **JIBAYA** — Déclaration fiscale en ligne
-  - **RNE** — Registre National des Entreprises
-- Activation/désactivation par plateforme via interrupteurs
+L'OCR brut est souvent irrégulier — les modèles IA retournent des données dans des formats variés. C'est là que la **normalisation** entre en jeu :
 
-### 📈 Tableaux de Bord & KPIs
-- Graphiques de tendance du volume documentaire (Recharts)
-- Analyse mensuelle avec courbes d'évolution
-- Données de janvier à juin avec projections
-
-### 🔗 Intégration Mosais
-- Configuration de connexion au logiciel comptable Mosais
-- Synchronisation du plan comptable, des écritures et des pièces justificatives
-- Test de connexion intégré
-
-### 📦 Archivage
-- Coffre-fort numérique chiffré pour le stockage de documents
-- Conformité avec les exigences réglementaires tunisiennes
-
-### 👤 Gestion des Utilisateurs
-- Multi-profils : **Admin**, **Comptable**, **Client**
-- Attribution de rôles avec code couleur
-- Contrôle d'accès basé sur les profils
+- **Champs multilingues** : Le système reconnaît les noms de champs en français (`fournisseur`, `montant`, `quantité`) et en anglais (`supplier`, `amount`, `quantity`)
+- **Formats numériques français** : Gestion automatique des virgules décimales et des espaces insécables (ex: `1 234,56` → `1234.56`)
+- **Désenrobage n8n** : Les réponses n8n sont souvent enveloppées dans `{json}`, `{output}` ou des tableaux — le normalisateur les déballage proprement
+- **Double validation** : La normalisation s'exécute côté frontend (TypeScript) ET côté backend (Python) pour garantir la cohérence
 
 ---
 
-## 🏗️ Architecture
+## 🤖 L'Écosystème IA : Groq + Mistral + n8n
+
+Digi Compta repose sur une combinaison de trois technologies IA qui travaillent en synergie pour offrir une automatisation puissante et rapide.
+
+### 🧠 Mistral AI — Le Moteur d'Extraction
+
+[Mistral AI](https://mistral.ai/) fournit le modèle de langage qui **comprend** le contenu des factures. Contrairement à l'OCR traditionnel qui se contente de lire du texte, Mistral :
+
+- **Comprend la structure** d'une facture (entête, lignes, totaux)
+- **Identifie les entités** (nom du fournisseur, numéro TVA, montants)
+- **Gère les mises en page variées** — chaque fournisseur a sa propre présentation
+- **Supporte le français et l'anglais** — essentiel pour les factures tunisiennes qui mélangent les deux langues
+- **Extrait des données structurées** directement au format JSON, pas du texte brut
+
+> 📸 *Placeholder : Capture d'écran du résultat d'extraction Mistral AI sur une facture*
+
+![Mistral AI Extraction](https://placehold.co/800x450/1a1a2e/FF7000?text=🤖+Mistral+AI+Extraction+Resultat)
+
+### ⚡ Groq — L'Inférence Ultra-Rapide
+
+[Groq](https://groq.com/) est le moteur d'inférence qui rend l'OCR **instantané**. Au lieu d'attendre plusieurs secondes pour une réponse API, Groq fournit :
+
+- **Latence en millisecondes** — L'utilisateur ne attend pas
+- **Débit élevé** — Traitement de plusieurs factures en parallèle
+- **Cohérence des résultats** — Même modèle, même qualité, mais plus vite
+
+L'intégration Groq est utilisée lors de la phase d'upload pour déclencher l'analyse OCR du document PDF le plus rapidement possible.
+
+> 📸 *Placeholder : Capture d'écran de la vitesse de réponse Groq vs API classique*
+
+![Groq Speed](https://placehold.co/800x450/1a1a2e/F55036?text=⚡+Groq+Ultra+Fast+Inference)
+
+### 🔄 n8n — L'Orchestrateur de Workflows
+
+[n8n](https://n8n.io/) est le cerveau qui **connecte tout**. C'est le moteur d'automatisation qui orchestre le pipeline complet :
+
+- **Webhook d'upload** — Reçoit le PDF envoyé depuis l'interface
+- **Workflow OCR** — Enchaîne les appels à Groq/Mistral de manière séquentielle
+- **Webhook d'extraction** — Endpoint dédié pour récupérer les résultats déjà traités
+- **API Facture** — Gère le cycle de vie complet des factures
+- **Gestion des erreurs** — Retry automatique, fallback, et logging
+
+L'avantage de n8n est sa **flexibilité** : les workflows sont visuels et modifiables sans toucher au code. Vous pouvez ajuster le pipeline OCR, ajouter des étapes de validation, ou intégrer de nouveaux services — directement depuis l'interface n8n.
+
+> 📸 *Placeholder : Capture d'écran du workflow n8n pour le pipeline OCR*
+
+![n8n Workflow](https://placehold.co/800x450/1a1a2e/EA5B4B?text=🔄+n8n+OCR+Workflow)
+
+### Comment les trois travaillent ensemble
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                      NAVIGATEUR (CLIENT)                     │
-│  ┌─────────┐  ┌──────────┐  ┌──────────┐  ┌─────────────┐  │
-│  │  React   │  │ Zustand  │  │IndexedDB │  │  WebSocket  │  │
-│  │  + AntD  │  │  Store   │  │ DocStore │  │   Client    │  │
-│  └────┬─────┘  └────┬─────┘  └────┬─────┘  └──────┬──────┘  │
-│       │              │              │                │         │
-└───────┼──────────────┼──────────────┼────────────────┼─────────┘
-        │              │              │                │
-        ▼              ▼              ▼                ▼
-┌─────────────────────────────────────────────────────────────┐
-│                   VITE DEV SERVER (PROXY)                     │
-│         /api ──────► FastAPI   /n8n ──────► n8n             │
-└───────────┬──────────────────────────┬───────────────────────┘
-            │                          │
-            ▼                          ▼
-┌───────────────────────┐  ┌──────────────────────────────────┐
-│     FASTAPI (8000)     │  │          n8n (5678)              │
-│  ┌──────────────────┐  │  │  ┌────────────────────────────┐  │
-│  │  REST Endpoints  │  │  │  │   Webhooks de Workflow     │  │
-│  │  /api/pdf-data   │  │  │  │   ├─ Upload Facture       │  │
-│  │  /invoice        │  │  │  │   ├─ Extraction OCR       │  │
-│  │  /ws (WebSocket) │  │  │  │   └─ API Facture          │  │
-│  └──────────────────┘  │  │  └────────────────────────────┘  │
-│  ┌──────────────────┐  │  │  ┌────────────────────────────┐  │
-│  │  Stockage        │  │  │  │   Moteur OCR               │  │
-│  │  ├─ In-Memory    │  │  │  │   (Grok / Mistral)         │  │
-│  │  └─ Filesystem   │  │  │  └────────────────────────────┘  │
-│  └──────────────────┘  │  └──────────────────────────────────┘
-└───────────────────────┘
+  ┌──────────────┐        ┌──────────────┐        ┌──────────────┐
+  │    GROQ      │        │   MISTRAL    │        │     n8n      │
+  │  ⚡ Vitesse  │        │  🧠 Analyse  │        │  🔄 Orchestre│
+  └──────┬───────┘        └──────┬───────┘        └──────┬───────┘
+         │                       │                       │
+         │  Inférence rapide     │  Compréhension        │  Coordination
+         │  du modèle            │  du document          │  des appels
+         │                       │                       │
+         └───────────┬───────────┘───────────┬───────────┘
+                     │                       │
+                     ▼                       ▼
+            ┌─────────────────────────────────────────┐
+            │         RÉSULTAT : Données de facture    │
+            │         structurées en temps réel        │
+            └─────────────────────────────────────────┘
 ```
+
+---
+
+## 🔄 Pipeline Complet de Traitement
+
+Le flux de bout en bout, de l'upload PDF jusqu'aux données exploitables :
+
+```
+  ┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐
+  │  UPLOAD │───►│  n8n    │───►│  GROQ   │───►│ MISTRAL │───►│ NORMAL- │
+  │  PDF    │    │ WEBHOOK │    │  API    │    │   OCR   │    │ ISATION │
+  └─────────┘    └─────────┘    └─────────┘    └─────────┘    └────┬────┘
+                                                                    │
+                                                                    ▼
+  ┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐
+  │  DÉCLAR-│◄───│ ÉDITEUR │◄───│ DONNÉES │◄───│ WEBHOOK │◄───│ RÉPONSE │
+  │  ATIONS │    │ FACTURE │    │ VALIDÉES│    │ RÉPONSE │    │  n8n    │
+  └─────────┘    └────┬────┘    └─────────┘    └─────────┘    └─────────┘
+                      │
+                      ▼
+               ┌─────────┐
+               │WEBSOCKET│────►  Diffusion temps réel
+               │BROADCAST│       à tous les clients connectés
+               └─────────┘
+```
+
+### Étape par Étape
+
+| # | Étape | Ce qui se passe |
+|:-:|:------|:----------------|
+| 1 | 📤 **Upload PDF** | L'utilisateur glisse-dépose un fichier PDF dans la page *Collecte* |
+| 2 | 💾 **Stockage local** | Le PDF est sauvegardé dans IndexedDB pour accès hors-ligne et prévisualisation |
+| 3 | 🔔 **Webhook n8n** | Le fichier est envoyé automatiquement au webhook n8n qui déclenche le workflow OCR |
+| 4 | ⚡ **Appel Groq** | Le workflow route la requête via Groq pour une inférence ultra-rapide |
+| 5 | 🧠 **OCR Mistral** | Mistral AI analyse le document et extrait les données structurées (fournisseur, lignes, totaux) |
+| 6 | 🔄 **Normalisation** | Les données brutes sont normalisées : champs multilingues, formats numériques français, désenrobage n8n |
+| 7 | 🧾 **Éditeur auto-rempli** | Les données normalisées remplissent automatiquement le formulaire de facture pour vérification |
+| 8 | 📡 **Diffusion temps réel** | Le backend diffuse la facture via WebSocket à tous les clients connectés |
+
+### 🛡️ Résilience du Pipeline
+
+Le système est conçu pour **ne jamais bloquer** :
+
+- **Fallback n8n** — Si l'URL n8n n'est pas configurée, le système continue avec un message d'information au lieu de crasher
+- **Sources multiples** — L'éditeur de facture essaie dans l'ordre : données du routeur → extraction stockée → extraction live → données de démonstration
+- **Formats numériques robustes** — La normalisation gère les particularités françaises : `1 234,56 TND` devient proprement `1234.56`
+- **Double normalisation** — TypeScript (frontend) et Python (backend) implémentent la même logique indépendamment pour une cohérence maximale
+- **Désenrobage automatique** — Les enveloppes n8n (`{json}`, `{output}`, tableaux) sont retirées proprement
+
+---
+
+## ⚡ Temps Réel & WebSocket
+
+Digi Compta ne se contente pas de traiter les factures — il les **diffuse en direct**. Dès qu'une facture est extraite et normalisée, elle apparaît instantanément sur tous les écrans connectés.
+
+### Comment ça marche
+
+- Le backend FastAPI maintient une **connexion WebSocket** ouverte (`/ws`)
+- Chaque facture traitée est **broadcastée** à tous les clients connectés
+- La page **Temps Réel** affiche les factures entrantes au fur et à mesure
+- Le composant **InvoiceViewer** accumule et affiche les factures avec leurs détails complets (items, sous-total, taxe, total)
+
+> 📸 *Placeholder : Capture d'écran du flux temps réel WebSocket*
+
+![Temps Réel WebSocket](https://placehold.co/800x450/1a1a2e/00D4FF?text=⚡+Temps+Réel+WebSocket+Stream)
+
+---
+
+## 📋 Des Factures aux Déclarations Fiscales
+
+L'objectif final de l'OCR n'est pas juste d'extraire des données — c'est de **générer des déclarations fiscales**. Digi Compta transforme les factures extraites en déclarations prêtes à soumettre :
+
+| Type de Déclaration | Description | Statut |
+|:--------------------|:------------|:------:|
+| **TVA** | Taxe sur la Valeur Ajoutée — déclaration mensuelle/trimestrielle | ✅ Génération automatique |
+| **IR** | Impôt sur le Revenu — déclaration des revenus | ✅ Génération automatique |
+
+Le processus est simple : les factures OCR-isées alimentent directement le module de déclarations. Plus de copier-coller, plus d'erreurs de retranscription.
+
+> 📸 *Placeholder : Capture d'écran du module de déclarations fiscales*
+
+![Déclarations Fiscales](https://placehold.co/800x450/1a1a2e/4CAF50?text=📋+Déclarations+Fiscales+Auto)
+
+---
+
+## 🏛️ Plateformes Nationales Tunisiennes
+
+Digi Compta cible spécifiquement l'écosystème réglementaire tunisien avec l'intégration des plateformes gouvernementales :
+
+| Plateforme | Acronyme | Rôle | Statut |
+|:-----------|:---------|:-----|:------:|
+| Caisse Nationale de Sécurité Sociale | **CNSS** | Déclarations sociales employeur | ✅ Connecté |
+| Plateforme de Déclaration Fiscale | **JIBAYA** | Déclarations d'impôts en ligne | 🔲 En cours |
+| Registre National des Entreprises | **RNE** | Registre commercial & juridique | 🔲 En cours |
+
+> 📸 *Placeholder : Capture d'écran des connexions plateformes nationales*
+
+![Plateformes Nationales](https://placehold.co/800x450/1a1a2e/2196F3?text=🏛️+Plateformes+Nationales+Tunisiennes)
+
+---
+
+## 📸 Captures d'Écran
+
+<!-- PLACEHOLDER: Replace all placeholder images with actual screenshots -->
+
+<div align="center">
+
+### 📤 Upload & OCR Pipeline
+
+| 📤 Upload PDF vers n8n | 🔄 Workflow n8n |
+|:-----------------------:|:---------------:|
+| ![Upload](https://placehold.co/600x400/1a1a2e/61DAFB?text=📤+Upload+PDF+→+n8n) | ![n8n Workflow](https://placehold.co/600x400/1a1a2e/EA5B4B?text=🔄+n8n+Workflow+OCR) |
+
+| 🤖 Extraction Mistral AI | ⚡ Réponse Groq |
+|:------------------------:|:---------------:|
+| ![Mistral](https://placehold.co/600x400/1a1a2e/FF7000?text=🤖+Mistral+AI+Extraction) | ![Groq](https://placehold.co/600x400/1a1a2e/F55036?text=⚡+Groq+Fast+Inference) |
+
+### 🧾 Résultat & Temps Réel
+
+| 🧾 Éditeur Facture Auto-rempli | ⚡ Flux Temps Réel |
+|:------------------------------:|:------------------:|
+| ![Facture](https://placehold.co/600x400/1a1a2e/4CAF50?text=🧾+Facture+Auto-remplie) | ![TempsReel](https://placehold.co/600x400/1a1a2e/00D4FF?text=⚡+WebSocket+Temps+Réel) |
+
+| 📊 Suivi OCR | 📋 Déclarations Fiscales |
+|:------------:|:------------------------:|
+| ![OCR](https://placehold.co/600x400/1a1a2e/9C27B0?text=🔍+Suivi+OCR) | ![Declarations](https://placehold.co/600x400/1a1a2e/4CAF50?text=📋+Déclarations+TVA/IR) |
+
+</div>
+
+> 📌 *Remplacez les images ci-dessus par de vraies captures d'écran de l'application et des workflows n8n.*
 
 ---
 
 ## 🛠️ Stack Technique
 
-### Frontend
+### 🤖 IA & Automatisation
 
-| Technologie | Version | Rôle |
-|:------------|:-------:|:-----|
-| ![React](https://img.shields.io/badge/React-18.2-61DAFB?logo=react) | 18.2 | Framework UI |
-| ![TypeScript](https://img.shields.io/badge/TypeScript-5.4-3178C6?logo=typescript) | 5.4 | Typage statique |
-| ![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?logo=vite) | 5.4 | Build & Dev Server |
-| ![Ant Design](https://img.shields.io/badge/Ant_Design-5.18-0170FE?logo=antdesign) | 5.18 | Bibliothèque de composants |
-| ![React Router](https://img.shields.io/badge/React_Router-6.26-CA4245?logo=reactrouter) | 6.26 | Routage côté client |
-| ![Zustand](https://img.shields.io/badge/Zustand-4.5-orange) | 4.5 | Gestion d'état légère |
-| ![Recharts](https://img.shields.io/badge/Recharts-2.12-8884D8) | 2.12 | Visualisation de données |
-| ![Axios](https://img.shields.io/badge/Axios-1.7-5A29E4?logo=axios) | 1.7 | Client HTTP |
-| ![Day.js](https://img.shields.io/badge/Day.js-1.11-FF6633) | 1.11 | Manipulation de dates (locale FR) |
+| Technologie | Rôle |
+|:------------|:-----|
+| [![Mistral AI](https://img.shields.io/badge/Mistral_AI-OCR_Extraction-FF7000?logo=mistralai)](https://mistral.ai/) | Modèle de langage pour l'extraction intelligente de données depuis les factures PDF |
+| [![Groq](https://img.shields.io/badge/Groq-Ultra_Fast_Inference-F55036?logo=groq)](https://groq.com/) | Inférence ultra-rapide pour des réponses OCR en millisecondes |
+| [![n8n](https://img.shields.io/badge/n8n-Workflow_Automation-EA5B4B?logo=n8n)](https://n8n.io/) | Orchestration des workflows : webhook upload → OCR → extraction → réponse |
 
-### Backend & Infrastructure
+### ⚙️ Backend
 
-| Technologie | Version | Rôle |
-|:------------|:-------:|:-----|
-| ![FastAPI](https://img.shields.io/badge/FastAPI-0.111-009688?logo=fastapi) | 0.111+ | Serveur API REST |
-| ![Uvicorn](https://img.shields.io/badge/Uvicorn-0.30-333333) | 0.30+ | Serveur ASGI |
-| ![httpx](https://img.shields.io/badge/httpx-0.27-2E86C1) | 0.27+ | Client HTTP asynchrone |
-| ![n8n](https://img.shields.io/badge/n8n-Workflow-EA5B4B?logo=n8n) | — | Moteur d'automatisation |
-| ![WebSocket](https://img.shields.io/badge/WebSocket-Realtime-010101) | — | Communication temps réel |
-| ![IndexedDB](https://img.shields.io/badge/IndexedDB-Storage-F2921D) | — | Stockage client-side |
+| Technologie | Rôle |
+|:------------|:-----|
+| [![FastAPI](https://img.shields.io/badge/FastAPI-0.111-009688?logo=fastapi)](https://fastapi.tiangolo.com/) | Serveur API REST + WebSocket pour la diffusion temps réel |
+| [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python)](https://python.org/) | Normalisation backend, proxy n8n, stockage des extractions |
+| [![Uvicorn](https://img.shields.io/badge/Uvicorn-ASGI-333333)](https://www.uvicorn.org/) | Serveur ASGI haute performance |
+| [![httpx](https://img.shields.io/badge/httpx-Async_Client-2E86C1)](https://www.python-httpx.org/) | Client HTTP asynchrone pour les appels proxy vers n8n |
 
----
+### 🖥️ Frontend
 
-## 📁 Structure du Projet
-
-```
-Frontend_digi_compta/
-├── 📄 .env.local                     # Variables d'environnement Vite
-├── 📄 main.py                        # Serveur FastAPI
-├── 📄 package.json                   # Dépendances NPM
-├── 📄 requirements.txt               # Dépendances Python
-├── 📄 vite.config.ts                 # Configuration Vite (proxy, alias)
-├── 📄 index.html                     # Point d'entrée HTML
-│
-├── 📂 src/
-│   ├── 📄 main.tsx                   # Point d'entrée React + Day.js FR
-│   ├── 📄 App.tsx                    # Layout principal (Sidebar + Routes)
-│   ├── 📄 styles.css                 # Styles globaux (couleur marque, layout)
-│   │
-│   ├── 📂 components/
-│   │   ├── 📄 InvoiceViewer.jsx      # Composant de flux factures WebSocket
-│   │   └── 📄 InvoiceViewer.d.ts     # Déclarations de types
-│   │
-│   ├── 📂 pages/
-│   │   ├── 📄 index.ts               # Barrel export
-│   │   ├── 📄 Accueil.tsx            # 📊 Tableau de bord
-│   │   ├── 📄 Collecte.tsx           # 📤 Collecte de documents
-│   │   ├── 📄 Facture.tsx            # 🧾 Éditeur de factures
-│   │   ├── 📄 Extraction.tsx         # 🔍 Extraction n8n
-│   │   ├── 📄 OCR.tsx                # 🔍 Suivi OCR
-│   │   ├── 📄 TempsReel.tsx          # ⚡ Vue temps réel
-│   │   ├── 📄 Declarations.tsx       # 📋 Déclarations fiscales
-│   │   ├── 📄 DonneesClients.tsx      # 👥 Données clients
-│   │   ├── 📄 Plateformes.tsx        # 🏛️ Plateformes nationales
-│   │   ├── 📄 Mosais.tsx             # 🔗 Intégration Mosais
-│   │   ├── 📄 Archivage.tsx          # 📦 Archivage
-│   │   ├── 📄 TableauxDeBord.tsx     # 📈 KPIs & graphiques
-│   │   └── 📄 Utilisateurs.tsx       # 👤 Gestion utilisateurs
-│   │
-│   ├── 📂 lib/
-│   │   ├── 📄 docStore.ts            # Stockage IndexedDB
-│   │   ├── 📄 extractionApi.ts       # Client API extraction n8n
-│   │   ├── 📄 invoiceApi.ts          # Client API CRUD factures
-│   │   ├── 📄 n8n.ts                 # Déclencheur webhook n8n
-│   │   └── 📄 normalizeInvoice.ts    # Normalisation des données factures
-│   │
-│   └── 📂 store/
-│       └── 📄 appStore.ts            # Store Zustand (état global)
-│
-├── 📂 storage/                        # Données webhook côté serveur
-│   ├── 📄 webhook_*.json             # Données normalisées
-│   └── 📄 webhook_raw_*.json         # Données brutes
-│
-└── 📂 dist/                           # Build de production
-```
+| Technologie | Rôle |
+|:------------|:-----|
+| [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react)](https://react.dev/) | Interface utilisateur |
+| [![TypeScript](https://img.shields.io/badge/TypeScript-5.4-3178C6?logo=typescript)](https://www.typescriptlang.org/) | Normalisation frontend des données OCR |
+| [![Ant Design](https://img.shields.io/badge/Ant_Design-5.18-0170FE?logo=antdesign)](https://ant.design/) | Composants UI professionnels |
+| [![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?logo=vite)](https://vitejs.dev/) | Build tool + proxy API/n8n |
+| [![Zustand](https://img.shields.io/badge/Zustand-State-orange)](https://zustand-demo.pmnd.rs/) | Gestion d'état légère |
+| [![Recharts](https://img.shields.io/badge/Recharts-Charts-8884D8)](https://recharts.org/) | Visualisation KPIs |
 
 ---
 
@@ -258,14 +337,13 @@ Frontend_digi_compta/
 
 ### 📋 Prérequis
 
-Assurez-vous d'avoir les outils suivants installés sur votre machine :
-
-| Outil | Version minimale | Installation |
-|:------|:----------------:|:-------------|
-| ![Node.js](https://img.shields.io/badge/Node.js-18+-339933?logo=node.js) | 18+ | [nodejs.org](https://nodejs.org/) |
-| ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python) | 3.10+ | [python.org](https://www.python.org/) |
-| ![n8n](https://img.shields.io/badge/n8n-Latest-EA5B4B?logo=n8n) | Dernière | [docs.n8n.io](https://docs.n8n.io/) |
-| ![Git](https://img.shields.io/badge/Git-Latest-F05032?logo=git) | Dernière | [git-scm.com](https://git-scm.com/) |
+| Outil | Version | Pourquoi |
+|:------|:-------:|:---------|
+| [![Node.js](https://img.shields.io/badge/Node.js-18+-339933?logo=node.js)](https://nodejs.org/) | 18+ | Frontend & dev server |
+| [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python)](https://python.org/) | 3.10+ | Backend FastAPI |
+| [![n8n](https://img.shields.io/badge/n8n-Latest-EA5B4B?logo=n8n)](https://docs.n8n.io/) | Dernière | Moteur de workflow OCR |
+| [![Groq API Key](https://img.shields.io/badge/Groq-API_Key-F55036?logo=groq)](https://console.groq.com/) | — | Inférence rapide |
+| [![Mistral API Key](https://img.shields.io/badge/Mistral-API_Key-FF7000?logo=mistralai)](https://console.mistral.ai/) | — | Extraction OCR |
 
 ### ⚡ Installation Rapide
 
@@ -285,7 +363,7 @@ pip install -r requirements.txt
 
 # 4️⃣ Configurer les variables d'environnement
 cp .env.local.example .env.local
-# Éditez .env.local avec vos URLs n8n et WebSocket
+# Éditez .env.local avec vos clés API Groq/Mistral et URLs n8n
 ```
 
 ### 🔧 Lancement en Développement
@@ -293,108 +371,28 @@ cp .env.local.example .env.local
 Ouvrez **trois terminaux** et lancez les services suivants :
 
 ```bash
-# 🖥️ Terminal 1 — n8n (moteur de workflow)
+# 🔄 Terminal 1 — n8n (moteur de workflow OCR)
 n8n start
+# → Interface n8n sur http://localhost:5678
+# → Importez le workflow OCR fourni dans /workflows
 
-# 🐍 Terminal 2 — FastAPI (backend)
+# 🐍 Terminal 2 — FastAPI (backend + WebSocket)
 source venv/bin/activate
 python main.py
-# → Serveur démarré sur http://127.0.0.1:8000
+# → Serveur API sur http://127.0.0.1:8000
+# → WebSocket sur ws://127.0.0.1:8000/ws
 
-# ⚛️ Terminal 3 — Vite (frontend)
+# ⚛️ Terminal 3 — Frontend
 npm run dev
-# → Application disponible sur http://localhost:5173
+# → Application sur http://localhost:5173
 ```
 
 ### 🏗️ Build de Production
 
 ```bash
-# Générer le build optimisé
 npm run build
-
-# Prévisualiser le build
 npm run preview
 ```
-
----
-
-## 🔄 Flux de Données
-
-Le pipeline complet de traitement d'une facture suit les étapes suivantes :
-
-```
-    ┌──────────┐     ┌───────────┐     ┌──────────┐     ┌───────────┐
-    │  UPLOAD  │────►│  INDEXEDDB│────►│  WEBHOOK │────►│    OCR    │
-    │  PDF     │     │  STOCKAGE │     │  n8n     │     │  n8n      │
-    └──────────┘     └───────────┘     └──────────┘     └─────┬─────┘
-                                                                │
-                                                                ▼
-    ┌──────────┐     ┌───────────┐     ┌──────────┐     ┌───────────┐
-    │  ÉDITIO… │◄────│  NORMALI… │◄────│  RÉPONSE │◄────│  EXTRACTION│
-    │  FACTURE │     │  DONNÉES  │     │  n8n     │     │  TEXTE    │
-    └─────┬────┘     └───────────┘     └──────────┘     └───────────┘
-          │
-          ▼
-    ┌──────────┐     ┌───────────┐
-    │  SAUVEGA…│────►│  WEBSOCKET│────►  Diffusion temps réel
-    │  BACKEND │     │  BROADCAST│       à tous les clients
-    └──────────┘     └───────────┘
-```
-
-### Détail du Pipeline
-
-1. **📤 Upload** — L'utilisateur glisse-dépose un PDF dans la page *Collecte*
-2. **💾 Stockage** — Le PDF est sauvegardé localement dans IndexedDB
-3. **🔔 Déclenchement** — Le webhook n8n est appelé avec le fichier PDF
-4. **🔍 OCR** — n8n exécute le workflow d'extraction (Grok/Mistral)
-5. **🔄 Normalisation** — Les données brutes sont normalisées (`normalizeInvoice.ts` côté frontend, `normalize_to_invoice_shape()` côté backend) — les deux implémentations gèrent les noms de champs français/anglais, les objets imbriqués, et l'enrobage n8n
-6. **✏️ Édition** — Les données normalisées remplissent automatiquement l'éditeur de facture
-7. **📡 Diffusion** — Le backend diffuse la facture à tous les clients WebSocket connectés
-8. **🖥️ Affichage** — Les pages *Temps Réel* et *InvoiceViewer* affichent les données en direct
-
-### 🛡️ Mécanismes de Résilience
-
-- **Fallback n8n** — Si l'URL n8n n'est pas configurée, le système continue avec un message d'information
-- **Sources multiples** dans la page Facture : état du routeur → extraction stockée → extraction live → données de démonstration
-- **Analyse numérique robuste** — Gestion des formats numériques français (espaces insécables, virgules décimales)
-- **Désenrobage n8n** — Gestion des enveloppements `{json}`, `{output}` et tableaux n8n
-- **Double normalisation** — Frontend (TypeScript) et backend (Python) implémentent la même logique indépendamment
-
----
-
-## 🌐 Plateformes Nationales
-
-Digi Compta intègre les plateformes gouvernementales tunisiennes essentielles pour les cabinets comptables :
-
-| Plateforme | Acronyme | Rôle | Statut |
-|:-----------|:---------|:-----|:------:|
-| Caisse Nationale de Sécurité Sociale | CNSS | Déclarations sociales | ✅ Connecté |
-| Plateforme de Déclaration Fiscale | JIBAYA | Déclarations d'impôts | 🔲 En cours |
-| Registre National des Entreprises | RNE | Registre commercial | 🔲 En cours |
-
----
-
-## 📸 Captures d'Écran
-
-<!-- PLACEHOLDER: Screenshots — Replace with actual screenshots of your application -->
-
-<div align="center">
-
-| 📊 Tableau de Bord | 📤 Collecte |
-|:------------------:|:-----------:|
-| ![Dashboard](https://placehold.co/600x400/1a1a2e/eee?text=📊+Dashboard) | ![Collecte](https://placehold.co/600x400/1a1a2e/eee?text=📤+Collecte) |
-
-| 🧾 Éditeur de Factures | ⚡ Temps Réel |
-|:----------------------:|:------------:|
-| ![Facture](https://placehold.co/600x400/1a1a2e/eee?text=🧾+Facture) | ![TempsReel](https://placehold.co/600x400/1a1a2e/eee?text=⚡+Temps+Réel) |
-
-| 📋 Déclarations | 👥 Clients |
-|:---------------:|:----------:|
-| ![Declarations](https://placehold.co/600x400/1a1a2e/eee?text=📋+Déclarations) | ![Clients](https://placehold.co/600x400/1a1a2e/eee?text=👥+Clients) |
-
-</div>
-
-> 📌 *Remplacez les images ci-dessus par de vraies captures d'écran de l'application.*
 
 ---
 
@@ -402,73 +400,102 @@ Digi Compta intègre les plateformes gouvernementales tunisiennes essentielles p
 
 ### Variables d'Environnement
 
-Créez un fichier `.env.local` à la racine du projet :
+Créez un fichier `.env.local` à la racine du projet avec les variables suivantes :
 
 ```env
-# 🔗 API Backend
-VITE_API_BASE=http://127.0.0.1:8000
-
-# 🔗 n8n Webhooks
+# ═══════════════════════════════════════════
+# 🤖 IA & OCR
+# ═══════════════════════════════════════════
 VITE_N8N_WEBHOOK_URL=http://localhost:5678/webhook/invoice-upload
 VITE_N8N_EXTRACTION_URL=http://localhost:5678/webhook/extraction
 VITE_N8N_INVOICE_API_URL=http://localhost:5678/webhook/invoice-api
-
-# ⚡ WebSocket
-VITE_WS_BASE=ws://127.0.0.1:8000
-
-# 🔗 n8n Upload (Backend)
 N8N_UPLOAD_URL=http://localhost:5678/webhook/upload
+
+# ═══════════════════════════════════════════
+# ⚙️ API Backend
+# ═══════════════════════════════════════════
+VITE_API_BASE=http://127.0.0.1:8000
+
+# ═══════════════════════════════════════════
+# ⚡ WebSocket Temps Réel
+# ═══════════════════════════════════════════
+VITE_WS_BASE=ws://127.0.0.1:8000
 ```
 
-### Proxy Vite
+> 💡 **Note** : Les clés API Groq et Mistral sont configurées dans les credentials n8n, pas dans le `.env.local`. Ouvrez l'interface n8n pour les renseigner.
 
-Le proxy est configuré dans `vite.config.ts` pour rediriger les requêtes en développement :
+---
 
-| Route | Cible | Description |
-|:------|:------|:------------|
-| `/api` | `http://127.0.0.1:8000` | API FastAPI |
-| `/n8n` | `http://localhost:5678` | Webhooks n8n |
+## 📁 Structure du Projet
+
+```
+Frontend_digi_compta/
+│
+├── 📄 main.py                        # 🐍 FastAPI — API REST + WebSocket + proxy n8n
+├── 📄 requirements.txt               # Dépendances Python (fastapi, uvicorn, httpx)
+│
+├── 📂 src/
+│   ├── 📂 lib/                       # 🔑 Logique OCR & automatisation
+│   │   ├── 📄 n8n.ts                 #    Déclencheur webhook n8n (upload PDF)
+│   │   ├── 📄 extractionApi.ts       #    Client API extraction n8n
+│   │   ├── 📄 invoiceApi.ts          #    Client API CRUD factures
+│   │   ├── 📄 normalizeInvoice.ts    #    🧠 Normalisation des données OCR
+│   │   └── 📄 docStore.ts            #    Stockage IndexedDB des PDF
+│   │
+│   ├── 📂 components/
+│   │   └── 📄 InvoiceViewer.jsx      #    ⚡ Flux factures temps réel (WebSocket)
+│   │
+│   ├── 📂 pages/
+│   │   ├── 📄 Collecte.tsx           #    📤 Upload PDF + déclenchement OCR
+│   │   ├── 📄 OCR.tsx                #    🔍 Suivi état traitement OCR
+│   │   ├── 📄 Extraction.tsx         #    🤖 Données extraites par n8n/Mistral
+│   │   ├── 📄 Facture.tsx            #    🧾 Éditeur facture auto-rempli
+│   │   ├── 📄 TempsReel.tsx          #    ⚡ Vue temps réel WebSocket
+│   │   ├── 📄 Declarations.tsx       #    📋 Déclarations TVA/IR
+│   │   ├── 📄 Accueil.tsx            #    📊 Dashboard & KPIs
+│   │   ├── 📄 Plateformes.tsx        #    🏛️ CNSS / JIBAYA / RNE
+│   │   └── ...                       #    Autres pages
+│   │
+│   └── 📂 store/
+│       └── 📄 appStore.ts            #    État global (Zustand)
+│
+├── 📂 storage/                        # 💾 Données webhook (extractions brutes & normalisées)
+│   ├── 📄 webhook_*.json
+│   └── 📄 webhook_raw_*.json
+│
+├── 📄 .env.local                     # ⚙️ Configuration (URLs n8n, WebSocket)
+├── 📄 vite.config.ts                 # Proxy /api → FastAPI, /n8n → n8n
+└── 📄 package.json
+```
 
 ---
 
 ## 🤝 Contribution
 
-Les contributions sont les bienvenues ! Voici comment participer :
+Les contributions sont les bienvenues ! Surtout pour améliorer le pipeline OCR et les intégrations IA.
 
-### 🔄 Processus de Contribution
+### 🔄 Processus
 
 1. 🍴 **Forkez** le dépôt
-2. 🌿 **Créez** une branche feature : `git checkout -b feature/ma-nouvelle-fonctionnalite`
-3. 💻 **Développez** votre fonctionnalité
-4. ✅ **Testez** vos changements
-5. 📝 **Commitez** avec un message clair : `git commit -m "feat: ajout de la fonctionnalité X"`
-6. 📤 **Poussez** votre branche : `git push origin feature/ma-nouvelle-fonctionnalite`
+2. 🌿 **Créez** une branche : `git checkout -b feature/amélioration-ocr`
+3. 💻 **Développez** votre amélioration
+4. ✅ **Testez** avec de vraies factures PDF
+5. 📝 **Commitez** : `git commit -m "feat: amélioration extraction Mistral"`
+6. 📤 **Poussez** : `git push origin feature/amélioration-ocr`
 7. 🔀 **Ouvrez** une Pull Request
 
-### 📜 Convention de Commits
+### 🐋 Roadmap — OCR & Automatisation
 
-| Type | Description |
-|:-----|:------------|
-| `feat` | Nouvelle fonctionnalité |
-| `fix` | Correction de bug |
-| `docs` | Modification de la documentation |
-| `style` | Changements de formatage (pas de logique) |
-| `refactor` | Refactoring du code |
-| `test` | Ajout ou modification de tests |
-| `chore` | Tâches de maintenance |
-
-### 🐋 Roadmap
-
-- [ ] 🔐 Authentification et gestion des sessions
+- [ ] 🧠 Fine-tuning du prompt Mistral pour les factures tunisiennes
+- [ ] 📄 Support multi-documents (bons de commande, reçus, devis)
+- [ ] 🔍 OCR batch — traitement de plusieurs PDF en parallèle
+- [ ] 📊 Score de confiance OCR avec alerte si faible
+- [ ] 🏛️ Auto-remplissage des déclarations CNSS/JIBAYA/RNE
+- [ ] 🔐 Authentification & rôles utilisateurs
 - [ ] 🗄️ Base de données persistante (PostgreSQL)
-- [ ] 🧪 Tests unitaires et d'intégration
-- [ ] 🐳 Dockerisation de l'application
-- [ ] 🚀 Déploiement CI/CD
-- [ ] 📱 Application mobile responsive
-- [ ] 🔔 Système de notifications
-- [ ] 📊 Rapports et exports PDF/Excel
-- [ ] 🏛️ Connexion complète CNSS / JIBAYA / RNE
-- [ ] 🔒 Chiffrement de bout en bout pour l'archivage
+- [ ] 🐳 Dockerisation (n8n + FastAPI + Frontend)
+- [ ] 📱 Interface mobile responsive
+- [ ] 📈 Dashboard analytique du taux d'automatisation
 
 ---
 
@@ -478,7 +505,7 @@ Ce projet est sous licence **MIT**. Voir le fichier [LICENSE](./LICENSE) pour pl
 
 ---
 
-## 👥 Auteurs
+## 👥 Auteur
 
 <table>
   <tr>
@@ -496,7 +523,9 @@ Ce projet est sous licence **MIT**. Voir le fichier [LICENSE](./LICENSE) pour pl
 
 <div align="center">
 
-**Fait avec ❤️ pour les cabinets comptables tunisiens**
+**Propulsé par 🤖 Mistral AI · ⚡ Groq · 🔄 n8n**
+
+*Fait avec ❤️ pour les cabinets comptables tunisiens*
 
 [⬆️ Retour en haut](#-digi-compta)
 
