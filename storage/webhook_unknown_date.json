@@ -1,0 +1,12 @@
+{
+  "id": "unknown",
+  "supplierName": "",
+  "supplierVat": "",
+  "invoiceNumber": "",
+  "date": "",
+  "currency": "TND",
+  "subtotal": 0,
+  "tax": 0,
+  "total": 0,
+  "lines": []
+}

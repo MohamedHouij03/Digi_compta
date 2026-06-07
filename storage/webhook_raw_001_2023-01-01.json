@@ -1,0 +1,38 @@
+{
+  "invoice_id": "001",
+  "date": "2023-01-01",
+  "due_date": "2023-01-15",
+  "customer": {
+    "id": "CUS001",
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "address": {
+      "street": "123 Main St",
+      "city": "Anytown",
+      "postal_code": "12345",
+      "country": "USA"
+    }
+  },
+  "supplier": {
+    "name": "ABC Inc.",
+    "vat_number": "FR123456789"
+  },
+  "currency": "USD",
+  "subtotal": 100,
+  "tax": 20,
+  "total": 120,
+  "items": [
+    {
+      "description": "Item 1",
+      "quantity": 2,
+      "unitPrice": 50,
+      "total": 100
+    },
+    {
+      "description": "Item 2",
+      "quantity": 3,
+      "unitPrice": 20,
+      "total": 60
+    }
+  ]
+}

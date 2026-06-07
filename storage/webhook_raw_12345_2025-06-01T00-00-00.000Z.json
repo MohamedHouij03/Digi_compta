@@ -1,0 +1,62 @@
+{
+  "invoice_id": "12345",
+  "date": "2025-06-01T00:00:00.000Z",
+  "due_date": "2025-06-15T00:00:00.000Z",
+  "customer": {
+    "id": "cus_123",
+    "name": "Célia Naudin",
+    "email": "hello@reallygreatsite.com",
+    "address": {
+      "street": "123 Anywhere St.",
+      "city": "Any City",
+      "postal_code": "12345",
+      "country": "France"
+    }
+  },
+  "supplier": {
+    "name": "Concordia",
+    "vat_number": "FR123456789"
+  },
+  "currency": "EUR",
+  "subtotal": 4650,
+  "tax": 930,
+  "total": 5580,
+  "items": [
+    {
+      "description": "Création de logo",
+      "quantity": 1,
+      "unitPrice": 900,
+      "total": 900
+    },
+    {
+      "description": "Conception d'un flyer",
+      "quantity": 1,
+      "unitPrice": 300,
+      "total": 300
+    },
+    {
+      "description": "Carte de visite",
+      "quantity": 3,
+      "unitPrice": 300,
+      "total": 900
+    },
+    {
+      "description": "Illustration personnalisée",
+      "quantity": 4,
+      "unitPrice": 200,
+      "total": 800
+    },
+    {
+      "description": "Refonte du site web",
+      "quantity": 1,
+      "unitPrice": 1500,
+      "total": 1500
+    },
+    {
+      "description": "Bannière publicitaire",
+      "quantity": 1,
+      "unitPrice": 250,
+      "total": 250
+    }
+  ]
+}

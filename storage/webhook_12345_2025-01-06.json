@@ -1,0 +1,58 @@
+{
+  "id": "12345",
+  "invoiceNumber": "12345",
+  "supplierName": "Concordia",
+  "supplierVat": "FR1234567890",
+  "supplierEmail": "hello@reallygreatsite.com",
+  "supplierPhone": "",
+  "supplierAddress": "123 Anywhere St., Any City, 12345, France",
+  "date": "2025-01-06",
+  "currency": "EUR",
+  "subtotal": 4650.0,
+  "tax": 930.0,
+  "total": 5580.0,
+  "lines": [
+    {
+      "id": "1",
+      "description": "Création de logo",
+      "quantity": 1.0,
+      "unitPrice": 900.0,
+      "total": 900.0
+    },
+    {
+      "id": "2",
+      "description": "Conception d'un flyer",
+      "quantity": 1.0,
+      "unitPrice": 300.0,
+      "total": 300.0
+    },
+    {
+      "id": "3",
+      "description": "Carte de visite",
+      "quantity": 3.0,
+      "unitPrice": 300.0,
+      "total": 900.0
+    },
+    {
+      "id": "4",
+      "description": "Illustration personnalisée",
+      "quantity": 4.0,
+      "unitPrice": 200.0,
+      "total": 800.0
+    },
+    {
+      "id": "5",
+      "description": "Refonte du site web",
+      "quantity": 1.0,
+      "unitPrice": 1500.0,
+      "total": 1500.0
+    },
+    {
+      "id": "6",
+      "description": "Bannière publicitaire",
+      "quantity": 1.0,
+      "unitPrice": 250.0,
+      "total": 250.0
+    }
+  ]
+}

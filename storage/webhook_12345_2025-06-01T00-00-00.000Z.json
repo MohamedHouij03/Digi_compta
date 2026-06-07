@@ -1,0 +1,55 @@
+{
+  "id": "12345",
+  "supplierName": "Concordia",
+  "supplierVat": "FR123456789",
+  "invoiceNumber": "",
+  "date": "2025-06-01T00:00:00.000Z",
+  "currency": "EUR",
+  "subtotal": 4650,
+  "tax": 930,
+  "total": 5580,
+  "lines": [
+    {
+      "id": "0",
+      "description": "Création de logo",
+      "quantity": 1,
+      "unitPrice": 900,
+      "total": 900
+    },
+    {
+      "id": "1",
+      "description": "Conception d'un flyer",
+      "quantity": 1,
+      "unitPrice": 300,
+      "total": 300
+    },
+    {
+      "id": "2",
+      "description": "Carte de visite",
+      "quantity": 3,
+      "unitPrice": 300,
+      "total": 900
+    },
+    {
+      "id": "3",
+      "description": "Illustration personnalisée",
+      "quantity": 4,
+      "unitPrice": 200,
+      "total": 800
+    },
+    {
+      "id": "4",
+      "description": "Refonte du site web",
+      "quantity": 1,
+      "unitPrice": 1500,
+      "total": 1500
+    },
+    {
+      "id": "5",
+      "description": "Bannière publicitaire",
+      "quantity": 1,
+      "unitPrice": 250,
+      "total": 250
+    }
+  ]
+}

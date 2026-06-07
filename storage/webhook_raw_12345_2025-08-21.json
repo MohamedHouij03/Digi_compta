@@ -1,0 +1,29 @@
+{
+  "invoice_id": "12345",
+  "date": "2025-08-21",
+  "customer": {
+    "id": "c1",
+    "name": "John Doe",
+    "email": "john@example.com",
+    "address": {
+      "street": "123 Main St",
+      "city": "Tunis",
+      "zip": "1000",
+      "country": "Tunisia"
+    }
+  },
+  "items": [
+    {
+      "description": "Service comptable",
+      "quantity": 2,
+      "unitPrice": 100,
+      "total": 200
+    },
+    {
+      "description": "Licence logiciel",
+      "quantity": 1,
+      "unitPrice": 250,
+      "total": 250
+    }
+  ]
+}

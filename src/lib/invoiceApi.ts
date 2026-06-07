@@ -10,6 +10,9 @@ export type Invoice = {
   id: string;
   supplierName: string;
   supplierVat?: string;
+  supplierAddress?: string;
+  supplierPhone?: string;
+  supplierEmail?: string;
   invoiceNumber: string;
   date: string; // ISO
   currency: string;

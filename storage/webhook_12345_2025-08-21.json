@@ -1,0 +1,27 @@
+{
+  "id": "12345",
+  "supplierName": "",
+  "supplierVat": "",
+  "invoiceNumber": "",
+  "date": "2025-08-21",
+  "currency": "TND",
+  "subtotal": 0,
+  "tax": 0,
+  "total": 0,
+  "lines": [
+    {
+      "id": "0",
+      "description": "Service comptable",
+      "quantity": 2,
+      "unitPrice": 100,
+      "total": 200
+    },
+    {
+      "id": "1",
+      "description": "Licence logiciel",
+      "quantity": 1,
+      "unitPrice": 250,
+      "total": 250
+    }
+  ]
+}

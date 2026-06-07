@@ -1,0 +1,27 @@
+{
+  "id": "001",
+  "supplierName": "ABC Inc.",
+  "supplierVat": "FR123456789",
+  "invoiceNumber": "",
+  "date": "2023-01-01",
+  "currency": "USD",
+  "subtotal": 100,
+  "tax": 20,
+  "total": 120,
+  "lines": [
+    {
+      "id": "0",
+      "description": "Item 1",
+      "quantity": 2,
+      "unitPrice": 50,
+      "total": 100
+    },
+    {
+      "id": "1",
+      "description": "Item 2",
+      "quantity": 3,
+      "unitPrice": 20,
+      "total": 60
+    }
+  ]
+}
