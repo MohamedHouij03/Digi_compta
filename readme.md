@@ -19,10 +19,6 @@
 
 ### 🎬 Démo Vidéo
 
-
-
-
-<!-- PLACEHOLDER: Demo Video — Replace the URL below with your actual demo video link -->
 [![Watch Demo](https://img.shields.io/badge/▶_Watch_Demo-FF6B6B?style=for-the-badge&logo=youtube&logoColor=white)](https://drive.google.com/file/d/1n0501bvizbNDYL1gMotUayX-s-Gg-oV5/view?usp=sharing)
 
 ---
@@ -116,10 +112,6 @@ Digi Compta repose sur une combinaison de trois technologies IA qui travaillent 
 - **Supporte le français et l'anglais** — essentiel pour les factures tunisiennes qui mélangent les deux langues
 - **Extrait des données structurées** directement au format JSON, pas du texte brut
 
-> 📸 *Placeholder : Capture d'écran du résultat d'extraction Mistral AI sur une facture*
-
-![Mistral AI Extraction](https://placehold.co/800x450/1a1a2e/FF7000?text=🤖+Mistral+AI+Extraction+Resultat)
-
 ### ⚡ Groq — L'Inférence Ultra-Rapide
 
 [Groq](https://groq.com/) est le moteur d'inférence qui rend l'OCR **instantané**. Au lieu d'attendre plusieurs secondes pour une réponse API, Groq fournit :
@@ -129,10 +121,6 @@ Digi Compta repose sur une combinaison de trois technologies IA qui travaillent 
 - **Cohérence des résultats** — Même modèle, même qualité, mais plus vite
 
 L'intégration Groq est utilisée lors de la phase d'upload pour déclencher l'analyse OCR du document PDF le plus rapidement possible.
-
-> 📸 *Placeholder : Capture d'écran de la vitesse de réponse Groq vs API classique*
-
-![Groq Speed](https://placehold.co/800x450/1a1a2e/F55036?text=⚡+Groq+Ultra+Fast+Inference)
 
 ### 🔄 n8n — L'Orchestrateur de Workflows
 
@@ -231,11 +219,6 @@ Digi Compta ne se contente pas de traiter les factures — il les **diffuse en d
 - Chaque facture traitée est **broadcastée** à tous les clients connectés
 - La page **Temps Réel** affiche les factures entrantes au fur et à mesure
 - Le composant **InvoiceViewer** accumule et affiche les factures avec leurs détails complets (items, sous-total, taxe, total)
-
-> 📸 *Placeholder : Capture d'écran du flux temps réel WebSocket*
-
-![Temps Réel WebSocket](https://placehold.co/800x450/1a1a2e/00D4FF?text=⚡+Temps+Réel+WebSocket+Stream)
-
 ---
 
 ## 📋 Des Factures aux Déclarations Fiscales
@@ -249,10 +232,6 @@ L'objectif final de l'OCR n'est pas juste d'extraire des données — c'est de *
 
 Le processus est simple : les factures OCR-isées alimentent directement le module de déclarations. Plus de copier-coller, plus d'erreurs de retranscription.
 
-> 📸 *Placeholder : Capture d'écran du module de déclarations fiscales*
-
-![Déclarations Fiscales](https://placehold.co/800x450/1a1a2e/4CAF50?text=📋+Déclarations+Fiscales+Auto)
-
 ---
 
 ## 🏛️ Plateformes Nationales Tunisiennes
@@ -265,15 +244,14 @@ Digi Compta cible spécifiquement l'écosystème réglementaire tunisien avec l'
 | Plateforme de Déclaration Fiscale | **JIBAYA** | Déclarations d'impôts en ligne | 🔲 En cours |
 | Registre National des Entreprises | **RNE** | Registre commercial & juridique | 🔲 En cours |
 
-> 📸 *Placeholder : Capture d'écran des connexions plateformes nationales*
-
-![Plateformes Nationales](https://placehold.co/800x450/1a1a2e/2196F3?text=🏛️+Plateformes+Nationales+Tunisiennes)
-
 ---
 
 ## 📸 Captures d'Écran
+<img width="1612" height="548" alt="Capture d&#39;écran 2025-08-21 112759" src="https://github.com/user-attachments/assets/8c6048aa-1c49-4911-a5dc-734c0d0f50f7" />
 
-<!-- PLACEHOLDER: Replace all placeholder images with actual screenshots -->
+<img width="1809" height="765" alt="Capture d&#39;écran 2025-08-26 165036" src="https://github.com/user-attachments/assets/8aee202c-536c-458f-b616-8fcd1d4ef9ed" />
+<img width="1857" height="605" alt="Capture d&#39;écran 2025-08-26 213042" src="https://github.com/user-attachments/assets/fb8904b8-b83d-4a26-a65c-4b14de86d3fe" />
+<img width="1865" height="798" alt="Capture d&#39;écran 2025-08-28 142918" src="https://github.com/user-attachments/assets/93213d58-1c98-4749-88a1-bf5328c1b55a" />
 
 <div align="center">
 
@@ -283,23 +261,8 @@ Digi Compta cible spécifiquement l'écosystème réglementaire tunisien avec l'
 |:-----------------------:|:---------------:|
 <img width="1919" height="915" alt="Capture d&#39;écran 2025-08-28 100832" src="https://github.com/user-attachments/assets/6a90caba-6f59-46a3-a180-c9b53ac86147" />
 
-| 🤖 Extraction Mistral AI | ⚡ Réponse Groq |
-|:------------------------:|:---------------:|
-| ![Mistral](https://placehold.co/600x400/1a1a2e/FF7000?text=🤖+Mistral+AI+Extraction) | ![Groq](https://placehold.co/600x400/1a1a2e/F55036?text=⚡+Groq+Fast+Inference) |
-
-### 🧾 Résultat & Temps Réel
-
-| 🧾 Éditeur Facture Auto-rempli | ⚡ Flux Temps Réel |
-|:------------------------------:|:------------------:|
-| ![Facture](https://placehold.co/600x400/1a1a2e/4CAF50?text=🧾+Facture+Auto-remplie) | ![TempsReel](https://placehold.co/600x400/1a1a2e/00D4FF?text=⚡+WebSocket+Temps+Réel) |
-
-| 📊 Suivi OCR | 📋 Déclarations Fiscales |
-|:------------:|:------------------------:|
-| ![OCR](https://placehold.co/600x400/1a1a2e/9C27B0?text=🔍+Suivi+OCR) | ![Declarations](https://placehold.co/600x400/1a1a2e/4CAF50?text=📋+Déclarations+TVA/IR) |
-
 </div>
 
-> 📌 *Remplacez les images ci-dessus par de vraies captures d'écran de l'application et des workflows n8n.*
 
 ---
 
