@@ -490,7 +490,6 @@ Ce projet est sous licence **MIT**. Voir le fichier [LICENSE](./LICENSE) pour pl
 
 **Propulsé par 🤖 Mistral AI · ⚡ Groq · 🔄 n8n**
 
-*Fait avec ❤️ pour les cabinets comptables tunisiens*
 
 [⬆️ Retour en haut](#-digi-compta)
 
