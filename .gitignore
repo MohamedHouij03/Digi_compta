@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+venv/
+.venv/
+
+# Build output
+dist/
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Runtime data written by the backend
+storage/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

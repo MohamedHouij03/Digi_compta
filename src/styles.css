@@ -1,0 +1,21 @@
+:root {
+  --brand: #1677ff;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.logo {
+  height: 64px;
+  margin: 16px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.header-title {
+  font-size: 18px;
+  font-weight: 600;
+}

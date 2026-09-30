@@ -1,0 +1,13 @@
+export { default as Accueil } from './Accueil';
+export { default as Collecte } from './Collecte';
+export { default as DonneesClients } from './DonneesClients';
+export { default as OCR } from './OCR';
+export { default as Mosais } from './Mosais';
+export { default as Plateformes } from './Plateformes';
+export { default as Archivage } from './Archivage';
+export { default as Declarations } from './Declarations';
+export { default as TableauxDeBord } from './TableauxDeBord';
+export { default as Utilisateurs } from './Utilisateurs';
+export { default as Facture } from './Facture';
+export { default as Extraction } from './Extraction';
+export { default as TempsReel } from './TempsReel';
