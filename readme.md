@@ -1,495 +1,258 @@
 <div align="center">
 
-# 🧾 Digi Compta
+# Digi Compta
 
-**Intelligent OCR & Automation for Tunisian Accounting Firms**
+**AI-powered invoice OCR and automation platform for Tunisian accounting firms**
 
-*Turn your PDF invoices into structured data — automatically, in real time, with AI*
+Upload a PDF invoice → get clean, structured, editable data in seconds, pushed live to every connected user.
 
-[![n8n](https://img.shields.io/badge/n8n-Workflow_Automation-EA5B4B?style=for-the-badge&logo=n8n&logoColor=white)](https://n8n.io/)
-[![Groq](https://img.shields.io/badge/Groq-Ultra_Fast_Inference-F55036?style=for-the-badge&logo=groq&logoColor=white)](https://groq.com/)
-[![Mistral AI](https://img.shields.io/badge/Mistral_AI-OCR_Extraction-FF7000?style=for-the-badge&logo=mistralai&logoColor=white)](https://mistral.ai/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-REST_API-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![WebSocket](https://img.shields.io/badge/WebSocket-Realtime-010101?style=for-the-badge&logo=websocket&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
-[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org/)
-[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](./LICENSE)
+[![React](https://img.shields.io/badge/React_18-20232A?logo=react&logoColor=61DAFB)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![n8n](https://img.shields.io/badge/n8n-EA4B71?logo=n8n&logoColor=white)](https://n8n.io/)
+[![Mistral AI](https://img.shields.io/badge/Mistral_AI-FF7000?logo=mistralai&logoColor=white)](https://mistral.ai/)
+[![Groq](https://img.shields.io/badge/Groq-F55036)](https://groq.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
 
----
-
-### 🎬 Video Demo
-
-[![Watch Demo](https://img.shields.io/badge/▶_Watch_Demo-FF6B6B?style=for-the-badge&logo=youtube&logoColor=white)](https://drive.google.com/file/d/1n0501bvizbNDYL1gMotUayX-s-Gg-oV5/view?usp=sharing)
-
----
+**[▶ Watch the demo video](https://drive.google.com/file/d/1n0501bvizbNDYL1gMotUayX-s-Gg-oV5/view?usp=sharing)**
 
 </div>
 
-## 📖 Table of Contents
-
-- [🧠 Why Digi Compta?](#-why-digi-compta)
-- [🔍 The Core of the Project: Automated OCR](#-the-core-of-the-project-automated-ocr)
-- [🤖 The AI Ecosystem: Groq + Mistral + n8n](#-the-ai-ecosystem-groq--mistral--n8n)
-- [🔄 End-to-End Processing Pipeline](#-end-to-end-processing-pipeline)
-- [⚡ Real Time & WebSocket](#-real-time--websocket)
-- [📋 From Invoices to Tax Returns](#-from-invoices-to-tax-returns)
-- [🏛️ Tunisian National Platforms](#️-tunisian-national-platforms)
-- [📸 Screenshots](#-screenshots)
-- [🛠️ Tech Stack](#️-tech-stack)
-- [🚀 Installation & Launch](#-installation--launch)
-- [⚙️ Configuration](#️-configuration)
-- [📁 Project Structure](#-project-structure)
-- [🤝 Contributing](#-contributing)
-- [📝 License](#-license)
-- [👥 Author](#-author)
+<img width="1612" alt="Digi Compta dashboard" src="https://github.com/user-attachments/assets/8c6048aa-1c49-4911-a5dc-734c0d0f50f7" />
 
 ---
 
-## 🧠 Why Digi Compta?
+## Contents
 
-Every day, Tunisian accounting firms lose hours **manually entering** invoice data, **checking** amounts, and **reformatting** information for tax returns. It is repetitive, error-prone, and costly work.
-
-**Digi Compta removes this bottleneck.** By combining OCR powered by **Mistral AI**, ultra-fast inference from **Groq**, and automation with **n8n**, the system turns a raw PDF into usable structured data — in seconds, with no human intervention.
-
-| 😫 Before Digi Compta | 🚀 With Digi Compta |
-|:----------------------|:---------------------|
-| Manual entry of every invoice | PDF upload → data extracted automatically |
-| 5 to 10 minutes per invoice | A few seconds per invoice |
-| Frequent transcription errors | AI extraction with built-in verification |
-| Disconnected process across tools | Fully automated end-to-end pipeline |
-| Manual tax returns | Generated automatically from invoices |
-| No real-time visibility | Live WebSocket broadcasting |
-
----
-
-## 🔍 The Core of the Project: Automated OCR
-
-The centerpiece of Digi Compta is its **intelligent OCR pipeline** — a system designed to understand and extract data from Tunisian and French-language invoices with high accuracy.
-
-### How it works
-
-1. **📤 You upload a PDF** — Simple drag-and-drop in the interface
-2. **🔔 n8n triggers the workflow** — The file is sent automatically via webhook
-3. **🤖 Mistral AI analyzes the document** — Mistral's vision/language model extracts structured data from the document image
-4. **⚡ Groq speeds up inference** — API calls go through Groq for ultra-fast inference (responses in milliseconds)
-5. **🔄 Data is normalized** — The system handles French formats (decimal commas, non-breaking spaces, multilingual fields)
-6. **🧾 The invoice editor fills itself in** — Extracted data appears automatically, ready to review and validate
-7. **📡 The result is broadcast in real time** — All connected users see the invoice appear instantly
-
-### What the OCR extracts
-
-For each invoice, the system automatically extracts:
-
-| Category | Extracted fields |
-|:----------|:----------------|
-| 🏢 **Supplier** | Name, VAT number, address, phone, email |
-| 🧾 **Invoice** | Invoice number, issue date, currency (TND by default) |
-| 📦 **Line items** | Description, quantity, unit price, total amount per line |
-| 💰 **Totals** | Subtotal, tax (VAT), total amount including tax |
-
-### Smart Normalization
-
-Raw OCR output is often inconsistent — AI models return data in a variety of formats. That is where **normalization** comes in:
-
-- **Multilingual fields**: The system recognizes field names in French (`fournisseur`, `montant`, `quantité`) and English (`supplier`, `amount`, `quantity`)
-- **French number formats**: Automatic handling of decimal commas and non-breaking spaces (e.g. `1 234,56` → `1234.56`)
-- **n8n unwrapping**: n8n responses are often wrapped in `{json}`, `{output}` or arrays — the normalizer unwraps them cleanly
-- **Double validation**: Normalization runs on the frontend (TypeScript) AND the backend (Python) to guarantee consistency
+- [Overview](#overview)
+- [Features](#features)
+- [Architecture](#architecture)
+- [Engineering Highlights](#engineering-highlights)
+- [API Reference](#api-reference)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Project Status & Roadmap](#project-status--roadmap)
+- [Screenshots](#screenshots)
+- [License](#license)
 
 ---
 
-## 🤖 The AI Ecosystem: Groq + Mistral + n8n
+## Overview
 
-Digi Compta relies on a combination of three AI technologies that work together to deliver powerful, fast automation.
+Accounting firms in Tunisia still spend hours typing invoice data by hand: supplier details, VAT numbers, line items, totals. The work is repetitive, slow (5–10 minutes per invoice) and error-prone.
 
-### 🧠 Mistral AI — The Extraction Engine
+**Digi Compta automates that step.** A PDF dropped into the web app is sent to an **n8n** workflow that uses **Mistral AI** and **Groq** to extract the invoice as structured JSON. The result is normalized, pre-filled into an editable invoice form for review, stored, and broadcast over **WebSocket** to every connected client.
 
-[Mistral AI](https://mistral.ai/) provides the language model that **understands** invoice content. Unlike traditional OCR, which only reads text, Mistral:
+| Before | With Digi Compta |
+|:--|:--|
+| Manual entry of every invoice | Drag-and-drop a PDF, data is extracted automatically |
+| 5–10 minutes per invoice | A few seconds per invoice |
+| Frequent transcription errors | AI extraction + human review in a pre-filled form |
+| No shared visibility | New invoices appear live for the whole team |
 
-- **Understands the structure** of an invoice (header, line items, totals)
-- **Identifies entities** (supplier name, VAT number, amounts)
-- **Handles varied layouts** — every supplier has its own format
-- **Supports French and English** — essential for Tunisian invoices, which mix both languages
-- **Extracts structured data** directly as JSON, not raw text
+---
 
-### ⚡ Groq — Ultra-Fast Inference
+## Features
 
-[Groq](https://groq.com/) is the inference engine that makes the OCR **instant**. Instead of waiting several seconds for an API response, Groq provides:
+- **PDF collection:** drag-and-drop upload with local storage (IndexedDB), in-app preview and deletion
+- **AI extraction:** supplier (name, VAT number, address, phone, email), invoice number, date, currency, line items, subtotal, VAT and total
+- **Robust normalization:** handles French/English field names, French number formats (`1 234,56` → `1234.56`), currency symbols and the different response envelopes n8n can return
+- **Invoice editor:** extracted data pre-fills a validated form with editable line items
+- **Real-time feed:** the backend broadcasts every processed invoice over WebSocket
+- **Accounting workspace UI:** dashboard, client records, tax returns (TVA / IR), national platforms (CNSS, JIBAYA, RNE), archiving and user roles *(see [status](#project-status--roadmap))*
 
-- **Millisecond latency** — The user doesn't wait
-- **High throughput** — Several invoices processed in parallel
-- **Consistent results** — Same model, same quality, just faster
+---
 
-The Groq integration is used during the upload phase to trigger OCR analysis of the PDF document as quickly as possible.
+## Architecture
 
-### 🔄 n8n — The Workflow Orchestrator
-
-[n8n](https://n8n.io/) is the brain that **connects everything**. It is the automation engine that orchestrates the full pipeline:
-
-- **Upload webhook** — Receives the PDF sent from the interface
-- **OCR workflow** — Chains the Groq/Mistral calls sequentially
-- **Extraction webhook** — Dedicated endpoint for retrieving already-processed results
-- **Invoice API** — Manages the full invoice lifecycle
-- **Error handling** — Automatic retry, fallback, and logging
-
-The advantage of n8n is its **flexibility**: workflows are visual and can be changed without touching code. You can adjust the OCR pipeline, add validation steps, or integrate new services — directly from the n8n interface.
-
-> 📸 *Placeholder: Screenshot of the n8n workflow for the OCR pipeline*
-
-<img width="1541" height="447" alt="Screenshot 2025-08-28 100507" src="https://github.com/user-attachments/assets/8b7e1d97-9d97-48b8-b5f4-db85fdd8813a" />
-
-
-### How the three work together
-
-```
-  ┌──────────────┐        ┌──────────────┐        ┌──────────────┐
-  │    GROQ      │        │   MISTRAL    │        │     n8n      │
-  │  ⚡ Speed    │        │  🧠 Analysis │        │  🔄 Workflow │
-  └──────┬───────┘        └──────┬───────┘        └──────┬───────┘
-         │                       │                       │
-         │  Fast model           │  Document             │  Coordinates
-         │  inference            │  understanding        │  the calls
-         │                       │                       │
-         └───────────┬───────────┘───────────┬───────────┘
-                     │                       │
-                     ▼                       ▼
-            ┌─────────────────────────────────────────┐
-            │   RESULT: Structured invoice data       │
-            │   delivered in real time                │
-            └─────────────────────────────────────────┘
+```mermaid
+flowchart LR
+    UI["React app<br/>(Collecte page)"] -- "PDF (multipart)" --> N8N["n8n workflow"]
+    UI -. "or via /upload-invoice" .-> API
+    N8N --> MISTRAL["Mistral AI<br/>document OCR"]
+    MISTRAL --> GROQ["Groq<br/>fast LLM inference"]
+    GROQ -- "structured JSON" --> API["FastAPI<br/>/webhook"]
+    API -- "normalize + persist" --> STORE[("storage/*.json")]
+    API -- "broadcast" --> WS(("WebSocket /ws"))
+    WS --> LIVE["Real-time views"]
+    N8N -- "response" --> EDITOR["Pre-filled invoice editor"]
 ```
 
----
+**Pipeline, step by step**
 
-## 🔄 End-to-End Processing Pipeline
-
-The end-to-end flow, from PDF upload to usable data:
-
-```
-  ┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐
-  │  UPLOAD │───►│  n8n    │───►│  GROQ   │───►│ MISTRAL │───►│ NORMAL- │
-  │  PDF    │    │ WEBHOOK │    │  API    │    │   OCR   │    │ IZATION │
-  └─────────┘    └─────────┘    └─────────┘    └─────────┘    └────┬────┘
-                                                                    │
-                                                                    ▼
-  ┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐
-  │   TAX   │◄───│ INVOICE │◄───│VALIDATED│◄───│ WEBHOOK │◄───│   n8n   │
-  │ RETURNS │    │ EDITOR  │    │  DATA   │    │RESPONSE │    │RESPONSE │
-  └─────────┘    └────┬────┘    └─────────┘    └─────────┘    └─────────┘
-                      │
-                      ▼
-               ┌─────────┐
-               │WEBSOCKET│────►  Real-time broadcast
-               │BROADCAST│       to all connected clients
-               └─────────┘
-```
-
-### Step by Step
-
-| # | Step | What happens |
-|:-:|:------|:----------------|
-| 1 | 📤 **PDF upload** | The user drags and drops a PDF file onto the *Collecte* (Collection) page |
-| 2 | 💾 **Local storage** | The PDF is saved in IndexedDB for offline access and preview |
-| 3 | 🔔 **n8n webhook** | The file is sent automatically to the n8n webhook, which triggers the OCR workflow |
-| 4 | ⚡ **Groq call** | The workflow routes the request through Groq for ultra-fast inference |
-| 5 | 🧠 **Mistral OCR** | Mistral AI analyzes the document and extracts structured data (supplier, line items, totals) |
-| 6 | 🔄 **Normalization** | Raw data is normalized: multilingual fields, French number formats, n8n unwrapping |
-| 7 | 🧾 **Auto-filled editor** | Normalized data automatically fills in the invoice form for review |
-| 8 | 📡 **Real-time broadcast** | The backend broadcasts the invoice over WebSocket to all connected clients |
-
-### 🛡️ Pipeline Resilience
-
-The system is designed to **never block**:
-
-- **n8n fallback** — If the n8n URL isn't configured, the system continues with an informational message instead of crashing
-- **Multiple sources** — The invoice editor tries, in order: router data → stored extraction → live extraction → demo data
-- **Robust number formats** — Normalization handles French quirks: `1 234,56 TND` cleanly becomes `1234.56`
-- **Double normalization** — TypeScript (frontend) and Python (backend) implement the same logic independently for maximum consistency
-- **Automatic unwrapping** — n8n envelopes (`{json}`, `{output}`, arrays) are stripped cleanly
+1. The user drops a PDF on the **Collecte** page; it is saved to IndexedDB for offline preview.
+2. The file is posted to the n8n webhook (directly, or proxied through FastAPI's `/upload-invoice`).
+3. The n8n workflow runs the document through Mistral AI and Groq and returns structured JSON.
+4. The response is normalized and opened in the **invoice editor** for review and correction.
+5. n8n also posts the result to FastAPI's `/webhook`, which normalizes it, stores the raw and normalized payloads, and broadcasts the invoice to all WebSocket clients.
 
 ---
 
-## ⚡ Real Time & WebSocket
+## Engineering Highlights
 
-Digi Compta doesn't just process invoices — it **broadcasts them live**. As soon as an invoice is extracted and normalized, it appears instantly on every connected screen.
+**Tolerant data normalization.** LLM output is inconsistent from one invoice to the next. The normalizer accepts many shapes for the same data (`supplier` / `vendor` / `seller`, `lines` / `items`, `qty` / `qte` / `quantity`, `invoice_number` / `invoiceNo` / `invoice_id`…), unwraps n8n envelopes (`[...]`, `{json}`, `{output}`), parses French-formatted numbers and recomputes missing totals (19% VAT). The same logic exists in both [TypeScript](src/lib/normalizeInvoice.ts) and [Python](main.py), so the frontend and backend always agree on the invoice shape.
 
-### How it works
+**Graceful degradation.** The invoice editor tries its data sources in order (router state → last stored extraction → live extraction → demo invoice), so the UI stays usable even when n8n or the backend is offline.
 
-- The FastAPI backend keeps a **WebSocket connection** open (`/ws`)
-- Every processed invoice is **broadcast** to all connected clients
-- The **Temps Réel** (Real Time) page displays incoming invoices as they arrive
-- The **InvoiceViewer** component accumulates and displays invoices with their full details (items, subtotal, tax, total)
----
+**Real-time broadcasting.** A small connection manager in FastAPI keeps track of WebSocket clients, pushes every processed invoice to all of them, and drops dead connections automatically.
 
-## 📋 From Invoices to Tax Returns
-
-The end goal of the OCR isn't just to extract data — it's to **generate tax returns**. Digi Compta turns extracted invoices into returns ready to file:
-
-| Return Type | Description | Status |
-|:--------------------|:------------|:------:|
-| **TVA** | Value Added Tax (VAT) — monthly/quarterly return | ✅ Automatic generation |
-| **IR** | Income Tax — income return | ✅ Automatic generation |
-
-The process is simple: OCR-processed invoices feed directly into the returns module. No more copy-pasting, no more transcription errors.
+**No-code-friendly orchestration.** The AI pipeline lives in n8n, so prompts, models and validation steps can be changed visually without redeploying the app.
 
 ---
 
-## 🏛️ Tunisian National Platforms
+## API Reference
 
-Digi Compta specifically targets the Tunisian regulatory ecosystem, with integration of government platforms:
+FastAPI backend ([`main.py`](main.py)), default `http://127.0.0.1:8000`. Interactive docs at `/docs`.
 
-| Platform | Acronym | Role | Status |
-|:-----------|:---------|:-----|:------:|
-| National Social Security Fund | **CNSS** | Employer social security filings | ✅ Connected |
-| Tax Filing Platform | **JIBAYA** | Online tax returns | 🔲 In progress |
-| National Business Registry | **RNE** | Commercial & legal registry | 🔲 In progress |
-
----
-
-## 📸 Screenshots
-<img width="1612" height="548" alt="Screenshot 2025-08-21 112759" src="https://github.com/user-attachments/assets/8c6048aa-1c49-4911-a5dc-734c0d0f50f7" />
-
-<img width="1809" height="765" alt="Screenshot 2025-08-26 165036" src="https://github.com/user-attachments/assets/8aee202c-536c-458f-b616-8fcd1d4ef9ed" />
-<img width="1857" height="605" alt="Screenshot 2025-08-26 213042" src="https://github.com/user-attachments/assets/fb8904b8-b83d-4a26-a65c-4b14de86d3fe" />
-<img width="1865" height="798" alt="Screenshot 2025-08-28 142918" src="https://github.com/user-attachments/assets/93213d58-1c98-4749-88a1-bf5328c1b55a" />
-
-<div align="center">
-
-### 📤 Upload & OCR Pipeline
-
-| 📤 PDF upload to n8n | 🔄 n8n workflow |
-|:-----------------------:|:---------------:|
-<img width="1919" height="915" alt="Screenshot 2025-08-28 100832" src="https://github.com/user-attachments/assets/6a90caba-6f59-46a3-a180-c9b53ac86147" />
-
-</div>
-
+| Method | Endpoint | Description |
+|:--|:--|:--|
+| `POST` | `/webhook` | Receives extraction results from n8n; normalizes, stores and broadcasts them |
+| `POST` | `/upload-invoice` | Accepts a PDF and forwards it to n8n (`N8N_UPLOAD_URL`) |
+| `GET` | `/pdf-data` | Returns the latest extracted invoice (or a demo invoice) |
+| `GET` | `/invoice?id=` | Returns a saved invoice |
+| `POST` | `/invoice` | Saves an edited invoice |
+| `GET` | `/health` | Health check |
+| `WS` | `/ws` | Real-time stream of processed invoices |
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-### 🤖 AI & Automation
-
-| Technology | Role |
-|:------------|:-----|
-| [![Mistral AI](https://img.shields.io/badge/Mistral_AI-OCR_Extraction-FF7000?logo=mistralai)](https://mistral.ai/) | Language model for intelligent data extraction from PDF invoices |
-| [![Groq](https://img.shields.io/badge/Groq-Ultra_Fast_Inference-F55036?logo=groq)](https://groq.com/) | Ultra-fast inference for millisecond OCR responses |
-| [![n8n](https://img.shields.io/badge/n8n-Workflow_Automation-EA5B4B?logo=n8n)](https://n8n.io/) | Workflow orchestration: upload webhook → OCR → extraction → response |
-
-### ⚙️ Backend
-
-| Technology | Role |
-|:------------|:-----|
-| [![FastAPI](https://img.shields.io/badge/FastAPI-0.111-009688?logo=fastapi)](https://fastapi.tiangolo.com/) | REST API + WebSocket server for real-time broadcasting |
-| [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python)](https://python.org/) | Backend normalization, n8n proxy, extraction storage |
-| [![Uvicorn](https://img.shields.io/badge/Uvicorn-ASGI-333333)](https://www.uvicorn.org/) | High-performance ASGI server |
-| [![httpx](https://img.shields.io/badge/httpx-Async_Client-2E86C1)](https://www.python-httpx.org/) | Async HTTP client for proxy calls to n8n |
-
-### 🖥️ Frontend
-
-| Technology | Role |
-|:------------|:-----|
-| [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react)](https://react.dev/) | User interface |
-| [![TypeScript](https://img.shields.io/badge/TypeScript-5.4-3178C6?logo=typescript)](https://www.typescriptlang.org/) | Frontend normalization of OCR data |
-| [![Ant Design](https://img.shields.io/badge/Ant_Design-5.18-0170FE?logo=antdesign)](https://ant.design/) | Professional UI components |
-| [![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?logo=vite)](https://vitejs.dev/) | Build tool + API/n8n proxy |
-| [![Zustand](https://img.shields.io/badge/Zustand-State-orange)](https://zustand-demo.pmnd.rs/) | Lightweight state management |
-| [![Recharts](https://img.shields.io/badge/Recharts-Charts-8884D8)](https://recharts.org/) | KPI visualization |
+| Layer | Technologies |
+|:--|:--|
+| **Frontend** | React 18, TypeScript, Vite, Ant Design 5, React Router, Zustand, Recharts, IndexedDB |
+| **Backend** | Python, FastAPI, Uvicorn, httpx, Pydantic, WebSockets |
+| **AI & automation** | n8n (workflow orchestration), Mistral AI (document OCR), Groq (fast LLM inference) |
 
 ---
 
-## 🚀 Installation & Launch
+## Getting Started
 
-### 📋 Prerequisites
+### Prerequisites
 
-| Tool | Version | Why |
-|:------|:-------:|:---------|
-| [![Node.js](https://img.shields.io/badge/Node.js-18+-339933?logo=node.js)](https://nodejs.org/) | 18+ | Frontend & dev server |
-| [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python)](https://python.org/) | 3.10+ | FastAPI backend |
-| [![n8n](https://img.shields.io/badge/n8n-Latest-EA5B4B?logo=n8n)](https://docs.n8n.io/) | Latest | OCR workflow engine |
-| [![Groq API Key](https://img.shields.io/badge/Groq-API_Key-F55036?logo=groq)](https://console.groq.com/) | — | Fast inference |
-| [![Mistral API Key](https://img.shields.io/badge/Mistral-API_Key-FF7000?logo=mistralai)](https://console.mistral.ai/) | — | OCR extraction |
+- Node.js 18+
+- Python 3.10+
+- [n8n](https://docs.n8n.io/) (self-hosted or cloud) with Mistral and Groq API credentials
 
-### ⚡ Quick Install
+### Installation
 
 ```bash
-# 1️⃣ Clone the repository
 git clone https://github.com/MohamedHouij03/Frontend_digi_compta.git
 cd Frontend_digi_compta
 
-# 2️⃣ Install frontend dependencies
+# Frontend
 npm install
 
-# 3️⃣ Install backend dependencies
+# Backend
 python -m venv venv
-source venv/bin/activate    # Linux/macOS
-# or: venv\Scripts\activate  # Windows
+source venv/bin/activate        # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
-# 4️⃣ Configure environment variables
-cp .env.example .env.local
-# Edit .env.local with your n8n webhook URLs
+# Configuration
+cp .env.example .env.local      # then edit the n8n webhook URLs
 ```
 
-### 🔧 Running in Development
+### Configuration
 
-Open **three terminals** and start the following services:
+| Variable | Used by | Description |
+|:--|:--|:--|
+| `VITE_N8N_WEBHOOK_URL` | Frontend | n8n webhook that receives uploaded PDFs |
+| `VITE_N8N_EXTRACTION_URL` | Frontend | Optional endpoint for the latest extraction (defaults to `/api/pdf-data`) |
+| `VITE_N8N_INVOICE_API_URL` | Frontend | Optional invoice API (defaults to `/api/invoice`) |
+| `VITE_API_BASE` | Frontend | Backend base URL (defaults to `/api`, proxied by Vite) |
+| `VITE_WS_BASE` | Frontend | WebSocket base URL, e.g. `ws://127.0.0.1:8000` |
+| `N8N_UPLOAD_URL` | Backend | n8n webhook used by `/upload-invoice` |
+| `CORS_ORIGINS` | Backend | Comma-separated allowed origins (defaults to `*`) |
+| `STORAGE_DIR` | Backend | Where extraction JSON files are written (defaults to `storage/`) |
+
+> Mistral and Groq API keys are stored as **n8n credentials**, never in this repository. Backend variables are read from the shell environment.
+
+### Run
 
 ```bash
-# 🔄 Terminal 1 — n8n (OCR workflow engine)
+# 1. n8n: http://localhost:5678
 n8n start
-# → n8n interface at http://localhost:5678
 
-# 🐍 Terminal 2 — FastAPI (backend + WebSocket)
-source venv/bin/activate
+# 2. Backend: http://127.0.0.1:8000 (API docs at /docs)
 python main.py
-# → API server at http://127.0.0.1:8000
-# → WebSocket at ws://127.0.0.1:8000/ws
 
-# ⚛️ Terminal 3 — Frontend
+# 3. Frontend: http://localhost:5173
 npm run dev
-# → App at http://localhost:5173
 ```
 
-### 🏗️ Production Build
-
-```bash
-npm run build
-npm run preview
-```
+Production build: `npm run build && npm run preview`
 
 ---
 
-## ⚙️ Configuration
-
-### Environment Variables
-
-Create a `.env.local` file at the project root with the following variables:
-
-```env
-# ═══════════════════════════════════════════
-# 🤖 AI & OCR
-# ═══════════════════════════════════════════
-VITE_N8N_WEBHOOK_URL=http://localhost:5678/webhook/invoice-upload
-VITE_N8N_EXTRACTION_URL=http://localhost:5678/webhook/extraction
-VITE_N8N_INVOICE_API_URL=http://localhost:5678/webhook/invoice-api
-N8N_UPLOAD_URL=http://localhost:5678/webhook/upload
-
-# ═══════════════════════════════════════════
-# ⚙️ Backend API
-# ═══════════════════════════════════════════
-VITE_API_BASE=http://127.0.0.1:8000
-
-# ═══════════════════════════════════════════
-# ⚡ Real-Time WebSocket
-# ═══════════════════════════════════════════
-VITE_WS_BASE=ws://127.0.0.1:8000
-```
-
-> 💡 **Note**: The Groq and Mistral API keys are configured in the n8n credentials, not in `.env.local`. Open the n8n interface to enter them. The backend reads `N8N_UPLOAD_URL`, `CORS_ORIGINS` and `STORAGE_DIR` from the shell environment.
-
----
-
-## 📁 Project Structure
+## Project Structure
 
 ```
-Frontend_digi_compta/
-│
-├── 📄 main.py                        # 🐍 FastAPI — REST API + WebSocket + n8n proxy
-├── 📄 requirements.txt               # Python dependencies (fastapi, uvicorn, httpx)
-│
-├── 📂 src/
-│   ├── 📂 lib/                       # 🔑 OCR & automation logic
-│   │   ├── 📄 n8n.ts                 #    n8n webhook trigger (PDF upload)
-│   │   ├── 📄 extractionApi.ts       #    n8n extraction API client
-│   │   ├── 📄 invoiceApi.ts          #    Invoice CRUD API client
-│   │   ├── 📄 normalizeInvoice.ts    #    🧠 OCR data normalization
-│   │   └── 📄 docStore.ts            #    IndexedDB PDF storage
-│   │
-│   ├── 📂 components/
-│   │   └── 📄 InvoiceViewer.tsx      #    ⚡ Real-time invoice feed (WebSocket)
-│   │
-│   ├── 📂 pages/
-│   │   ├── 📄 Collecte.tsx           #    📤 PDF upload + OCR trigger
-│   │   ├── 📄 OCR.tsx                #    🔍 OCR processing status
-│   │   ├── 📄 Extraction.tsx         #    🤖 Data extracted by n8n/Mistral
-│   │   ├── 📄 Facture.tsx            #    🧾 Auto-filled invoice editor
-│   │   ├── 📄 TempsReel.tsx          #    ⚡ Real-time WebSocket view
-│   │   ├── 📄 Declarations.tsx       #    📋 VAT/IR tax returns
-│   │   ├── 📄 Accueil.tsx            #    📊 Dashboard & KPIs
-│   │   ├── 📄 Plateformes.tsx        #    🏛️ CNSS / JIBAYA / RNE
-│   │   └── ...                       #    Other pages
-│   │
-│   └── 📂 store/
-│       └── 📄 appStore.ts            #    Global state (Zustand)
-│
-├── 📂 storage/                        # 💾 Webhook data (raw & normalized extractions)
-│   ├── 📄 webhook_*.json
-│   └── 📄 webhook_raw_*.json
-│
-├── 📄 .env.example                   # ⚙️ Configuration template (n8n URLs, WebSocket)
-├── 📄 vite.config.ts                 # Proxy /api → FastAPI, /n8n → n8n
-└── 📄 package.json
+├── main.py                     # FastAPI: REST API, n8n webhook, WebSocket broadcast
+├── requirements.txt
+├── src/
+│   ├── App.tsx                 # Layout, navigation and routes
+│   ├── lib/
+│   │   ├── n8n.ts              # PDF upload to the n8n webhook
+│   │   ├── normalizeInvoice.ts # OCR output normalization
+│   │   ├── extractionApi.ts    # Extraction API client
+│   │   ├── invoiceApi.ts       # Invoice API client + types
+│   │   └── docStore.ts         # IndexedDB PDF storage
+│   ├── components/
+│   │   └── InvoiceViewer.tsx   # Live WebSocket invoice feed
+│   ├── pages/                  # Collecte, Facture, Extraction, TempsReel, Declarations, …
+│   └── store/appStore.ts       # Global state (Zustand)
+├── vite.config.ts              # Dev proxy: /api → FastAPI, /n8n → n8n
+└── .env.example
 ```
 
 ---
 
-## 🤝 Contributing
+## Project Status & Roadmap
 
-Contributions are welcome! Especially to improve the OCR pipeline and AI integrations.
+| Module | Status |
+|:--|:--|
+| PDF collection, storage & preview | ✅ Working |
+| AI extraction via n8n (Mistral + Groq) | ✅ Working |
+| Normalization & pre-filled invoice editor | ✅ Working |
+| Real-time WebSocket feed | ✅ Working |
+| Tax returns (TVA / IR), KPIs, clients, users | 🧩 UI prototype with sample data |
+| National platforms (CNSS, JIBAYA, RNE), Mosais, archiving | 🧩 UI prototype, integrations planned |
 
-### 🔄 Process
+**Next steps**
 
-1. 🍴 **Fork** the repository
-2. 🌿 **Create** a branch: `git checkout -b feature/ocr-improvement`
-3. 💻 **Build** your improvement
-4. ✅ **Test** with real PDF invoices
-5. 📝 **Commit**: `git commit -m "feat: improve Mistral extraction"`
-6. 📤 **Push**: `git push origin feature/ocr-improvement`
-7. 🔀 **Open** a Pull Request
-
-### 🐋 Roadmap — OCR & Automation
-
-- [ ] 🧠 Fine-tune the Mistral prompt for Tunisian invoices
-- [ ] 📄 Multi-document support (purchase orders, receipts, quotes)
-- [ ] 🔍 Batch OCR — process several PDFs in parallel
-- [ ] 📊 OCR confidence score with low-confidence alerts
-- [ ] 🏛️ Auto-fill CNSS/JIBAYA/RNE filings
-- [ ] 🔐 Authentication & user roles
-- [ ] 🗄️ Persistent database (PostgreSQL)
-- [ ] 🐳 Dockerization (n8n + FastAPI + Frontend)
-- [ ] 📱 Responsive mobile interface
-- [ ] 📈 Automation-rate analytics dashboard
+- [ ] Generate TVA / IR returns from extracted invoices
+- [ ] Persistent database (PostgreSQL) instead of in-memory/JSON storage
+- [ ] Authentication and role-based access
+- [ ] Batch OCR and support for other documents (receipts, quotes, purchase orders)
+- [ ] Extraction confidence score with low-confidence alerts
+- [ ] Docker Compose setup (n8n + FastAPI + frontend)
+- [ ] Automated tests for the normalization logic
 
 ---
 
-## 📝 License
+## Screenshots
 
-This project is licensed under the **MIT** license. See the [LICENSE](./LICENSE) file for details.
+**n8n OCR workflow**
 
----
+<img width="1541" alt="n8n OCR workflow" src="https://github.com/user-attachments/assets/8b7e1d97-9d97-48b8-b5f4-db85fdd8813a" />
 
-## 👥 Author
+**PDF upload and extraction**
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/MohamedHouij03">
-        <img src="https://img.shields.io/badge/GitHub-MohamedHouij03-181717?style=flat-square&logo=github" alt="GitHub"/>
-        <br />
-        <sub><b>Mohamed Houij</b></sub>
-      </a>
-    </td>
-  </tr>
-</table>
+<img width="1919" alt="PDF upload and extraction" src="https://github.com/user-attachments/assets/6a90caba-6f59-46a3-a180-c9b53ac86147" />
+
+**Application views**
+
+<img width="1809" alt="Application view" src="https://github.com/user-attachments/assets/8aee202c-536c-458f-b616-8fcd1d4ef9ed" />
+<img width="1857" alt="Application view" src="https://github.com/user-attachments/assets/fb8904b8-b83d-4a26-a65c-4b14de86d3fe" />
+<img width="1865" alt="Application view" src="https://github.com/user-attachments/assets/93213d58-1c98-4749-88a1-bf5328c1b55a" />
 
 ---
 
-<div align="center">
+## License
 
-**Powered by 🤖 Mistral AI · ⚡ Groq · 🔄 n8n**
+Released under the [MIT License](./LICENSE).
 
+## Author
 
-[⬆️ Back to top](#-digi-compta)
-
-</div>
+**Mohamed Houij** · [GitHub @MohamedHouij03](https://github.com/MohamedHouij03)
